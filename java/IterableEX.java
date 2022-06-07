@@ -1,7 +1,7 @@
-import  java.util.*;
+import java.util.*;
 
 public class IterableEX {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         List<String> list = new ArrayList<>();
         list.add("one");
         list.add("two");
@@ -10,9 +10,13 @@ public class IterableEX {
         Collection<String> collection = list;
         Iterable<String> iterable = collection;
 
-        for(String element : iterable){
+        for (String element : iterable) {
             System.out.print(element);
             System.out.println("\n");
         }
-    } 
+        /*For each method */
+        iterable.forEach((element) -> {
+            System.out.println(element);
+        });
+    }
 }
