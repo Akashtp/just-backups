@@ -14,7 +14,7 @@ public class IterableEX {
             System.out.print(element);
             System.out.println("\n");
         }
-        /*For each method */
+        /* For each method */
         iterable.forEach((element) -> {
             System.out.println(element);
         });
